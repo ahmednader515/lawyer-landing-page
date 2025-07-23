@@ -83,7 +83,7 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center border-t-4 border-[var(--accent)] w-64">
               <div className="p-2 border-2 border-[var(--accent)] rounded-tr-[60px] rounded-bl-[60px] shadow-md mb-4 w-32 h-32 flex items-center justify-center overflow-hidden">
                 {/* Replace src with actual image later */}
-                <img src="/public/static/placeholder-profile.png" alt="عمر عزت عبد الله" className="object-cover w-28 h-28 rounded-tr-[50px] rounded-bl-[50px]" />
+                <img src="/logo.png" alt="عمر عزت عبد الله" className="object-cover w-28 h-28 rounded-tr-[50px] rounded-bl-[50px]" />
               </div>
               <span className="text-lg font-semibold text-gray-900 dark:text-gray-100">الأستاذ عمر عزت عبد الله</span>
             </div>
@@ -91,7 +91,7 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center border-t-4 border-[var(--accent)] w-64">
               <div className="p-2 border-2 border-[var(--accent)] rounded-tr-[60px] rounded-bl-[60px] shadow-md mb-4 w-32 h-32 flex items-center justify-center overflow-hidden">
                 {/* Replace src with actual image later */}
-                <img src="/public/static/placeholder-profile.png" alt="كريم يوسف التركي" className="object-cover w-28 h-28 rounded-tr-[50px] rounded-bl-[50px]" />
+                <img src="/logo.png" alt="كريم يوسف التركي" className="object-cover w-28 h-28 rounded-tr-[50px] rounded-bl-[50px]" />
               </div>
               <span className="text-lg font-semibold text-gray-900 dark:text-gray-100">الأستاذ كريم يوسف التركي</span>
             </div>
