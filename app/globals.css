@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-playpen-sans-arabic {
+    font-family: 'Playpen Sans Arabic', sans-serif;
+  }
+  .font-homemade-apple-playpen {
+    font-family: 'Homemade Apple', 'Playpen Sans Arabic', sans-serif;
+  }
+}
+
+:root {
+  --accent: #CA8F21;
+  --bg: #ffffff;
+  --text: #CA8F21;
+}
+
+.hero-bg {
+  background: linear-gradient(to left, #e0e7ef 0%, #fff 100%);
+  position: relative;
+}
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100%25" height="100%25" xmlns="http://www.w3.org/2000/svg"><rect width="100%25" height="100%25" fill="none"/><circle cx="50" cy="50" r="2" fill="%23c59d5f" fill-opacity="0.08"/></svg>');
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #d4af37;
+    --bg: #18181b;
+    --text: #f3f4f6;
+  }
+}
+
+/* Add local font faces */
+@font-face {
+  font-family: 'Lemonada';
+  src: url('/Lemonada-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playpen Sans Arabic';
+  src: url('/PlaypenSansArabic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Playpen Sans Arabic', Arial, Helvetica, sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Lemonada', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
