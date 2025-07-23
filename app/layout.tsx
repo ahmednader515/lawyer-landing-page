@@ -29,7 +29,7 @@ const mada = Mada({
 });
 
 export const metadata: Metadata = {
-  title: "أ. محمد السيد ابو سريع افضل محامي في مصر",
+  title: "أ. محمد السيد ابو سريع افضل محامي في الأسكندرية",
   icons: {
     icon: "/logo.png",
   },
