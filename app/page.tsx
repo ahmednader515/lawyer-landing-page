@@ -9,18 +9,18 @@ export default function Home() {
         {/* Contact info vertically centered */}
         <div className="flex flex-row items-center gap-1 md:gap-6 text-[10px] md:text-sm text-gray-800 dark:text-gray-100 w-full justify-end h-full pt-5 pl-2">
           <span className="flex items-start gap-1 self-start">
-            <p className="text-gray-800 dark:text-gray-100 text-[11px] md:text-sm">مكتب ٠٣/٤٨٥٦٠٩٥</p>
+            <p className="text-gray-800 dark:text-gray-100 text-[9.5px] md:text-sm">مكتب ٠٣/٤٨٥٦٠٩٥</p>
             <span>-</span>
             <FaPhoneAlt className="text-[var(--accent)] text-[10px] md:text-sm" />
-            <a href="tel:01024920913" className="hover:underline text-[11px] md:text-sm">٠١٠٢٤٩٢٠٩١٣</a>
+            <a href="tel:01024920913" className="hover:underline text-[9.5px] md:text-sm">٠١٠٢٤٩٢٠٩١٣</a>
             <span>-</span>
-            <a href="tel:01285815568" className="hover:underline text-[11px] md:text-sm">٠١٢٨٥٨١٥٥٦٨</a>
+            <a href="tel:01285815568" className="hover:underline text-[9.5px] md:text-sm">٠١٢٨٥٨١٥٥٦٨</a>
           </span>
         </div>
         {/* Large logo overlapping navbar, right-aligned */}
         <div className="absolute right-2 md:right-12 top-1/2 md:top-full -translate-y-1/2 z-50 pointer-events-none pt-10">
           <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg flex items-center justify-center p-[6px] md:p-[10px]">
-            <Image src="/logo.png" alt="Logo" width={100} height={100} className="object-contain w-20 h-20 md:w-40 md:h-40" />
+            <Image src="/logo.png" alt="Logo" width={100} height={100} className="object-contain w-15 h-15 md:w-30 md:h-30" />
           </div>
         </div>
       </nav>
@@ -41,22 +41,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40 dark:bg-black/60 z-10" />
         {/* Text Content */}
         <div className="flex-1 flex flex-col items-end md:items-end justify-center z-20 pl-0 md:pl-12 text-right md:text-right mr-4 md:mr-16">
-          <h1 className="alex-brush text-4xl md:text-4xl mb-4 text-blue-900 dark:text-yellow-400 drop-shadow z-20 w-full text-right mb-5">أ. محمد السيد ابو سريع</h1>
-          <h2 className="alex-brush text-2xl md:text-3xl mb-4 text-[var(--accent)] z-20 w-full text-right mb-10">محامٍ و محكم</h2>
-          <p className="text-xl md:text-2xl mb-8 text-gray-700 dark:text-gray-200 leading-relaxed z-20 w-full text-right">خبرة واسعة في تقديم الاستشارات القانونية والتمثيل أمام المحاكم في مختلف القضايا المدنية والتجارية والجنائية.</p>
+          <h1 className="alex-brush text-xl md:text-4xl mb-4 text-blue-900 dark:text-yellow-400 drop-shadow z-20 w-full text-right mb-5">أ. محمد السيد ابو سريع</h1>
+          <h2 className="alex-brush text-md md:text-3xl mb-4 text-[var(--accent)] z-20 w-full text-right mb-10">محامٍ و محكم و مستشار قانوني</h2>
+          <p className="text-md md:text-2xl mb-8 text-gray-700 dark:text-gray-200 leading-relaxed z-20 w-full text-right">خبرة واسعة في تقديم الاستشارات القانونية والتمثيل أمام المحاكم في مختلف القضايا المدنية والتجارية والجنائية.</p>
           <a href="#contact" className="group bg-transparent border-2 border-[var(--accent)] text-[var(--accent)] px-10 py-4 rounded-lg text-xl font-bold shadow hover:bg-[var(--accent)] hover:text-white transition z-20 flex items-center justify-center gap-2 md:justify-start text-right self-start">
             <FaBalanceScale className="text-[var(--accent)] text-2xl transition-colors duration-200 group-hover:text-white" />
             احجز استشارتك القانونية الان
           </a>
-          {/* Social Media Icons */}
-          <div className="flex flex-row gap-4 mt-4 mr-5 z-20 self-start">
-            <a href="https://www.facebook.com/share/1B3CwMVmqo/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-blue-700 dark:text-yellow-300 hover:text-blue-900 dark:hover:text-yellow-400 text-2xl transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="28" height="28"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
-            </a>
-            <a href="https://www.instagram.com/muhammad_abusree_lawfirm?igsh=dDh3YWRrc3c1OW9p&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-pink-600 dark:text-yellow-300 hover:text-pink-800 dark:hover:text-yellow-400 text-2xl transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.497 5.782 2.225 7.148 2.163 8.414 2.105 8.794 2.163 12 2.163zm0-2.163C8.741 0 8.332.012 7.052.07 5.771.128 4.659.334 3.678 1.315c-.98.98-1.187 2.092-1.245 3.373C2.012 5.668 2 6.077 2 12c0 5.923.012 6.332.07 7.612.058 1.281.265 2.393 1.245 3.373.98.98 2.092 1.187 3.373 1.245C8.332 23.988 8.741 24 12 24s3.668-.012 4.948-.07c1.281-.058 2.393-.265 3.373-1.245.98-.98 1.187-2.092 1.245-3.373.058-1.28.07-1.689.07-7.612 0-5.923-.012-6.332-.07-7.612-.058-1.281-.265-2.393-1.245-3.373-.98-.98-2.092-1.187-3.373-1.245C15.668.012 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-            </a>
-          </div>
         </div>
         {/* Hero Image */}
         <div className="flex-1 flex items-center justify-center z-20 mt-8 md:mt-0">
@@ -128,12 +119,12 @@ export default function Home() {
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center h-full border-t-4 border-[var(--accent)] hover:scale-105 transition-transform">
             <FaGavel className="text-[var(--accent)] text-3xl mb-3" />
             <h4 className="text-xl font-semibold mb-2 dark:text-yellow-200">القضايا الجنائية</h4>
-            <p className="text-gray-600 dark:text-gray-300">تمثيل قانوني أمام المحاكم والدفاع عن حقوق العملاء في القضايا الجنائية والمدنية لضمان الحصول على أفضل نتيجة قانونية ممكنة.</p>
+            <p className="text-gray-600 dark:text-gray-300">تقديم الدعم والتمثيل القانوني امام كافة المحاكم الجنائية باختلاف درجاتها والمحاكم الاقتصادية والدفاع عن حقوق الموكلين حتى الوصول لحكم البراءة</p>
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center h-full border-t-4 border-[var(--accent)] hover:scale-105 transition-transform">
             <FaUsers className="text-[var(--accent)] text-3xl mb-3" />
             <h4 className="text-xl font-semibold mb-2 dark:text-yellow-200">القضايا المدنية</h4>
-            <p className="text-gray-600 dark:text-gray-300">تقديم استشارات قانونية وتمثيل العملاء أمام الجهات القضائية لحماية حقوقهم، وتسوية النزاعات، وصياغة العقود ومتابعة القضايا حتى صدور الحكم.</p>
+            <p className="text-gray-600 dark:text-gray-300">تقديم الدعم والتمثيل القانوني امام المحاكم المدنية ومحاكم الطعن والدفاع عن حقوق الموكلين وحماية حقوقهم حتى صدور الحكم</p>
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center h-full border-t-4 border-[var(--accent)] hover:scale-105 transition-transform">
             <FaBalanceScale className="text-[var(--accent)] text-3xl mb-3" />
@@ -149,7 +140,7 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center h-full border-t-4 border-[var(--accent)] hover:scale-105 transition-transform">
               <FaBalanceScale className="text-[var(--accent)] text-3xl mb-3" />
               <h4 className="text-xl font-semibold mb-2 dark:text-yellow-200">صياغة العقود</h4>
-              <p className="text-gray-600 dark:text-gray-300">صياغة العقود والاتفاقيات التجارية والمالية والمواد المتعلقة بالملكية الفكرية.</p>
+              <p className="text-gray-600 dark:text-gray-300">صياغة كافة أنواع العقود صياغة قانونية منضبطة تحفظ حقوق الموكلين وتضمن نجاح تعاقداتهم</p>
             </div>
           </div>
         </div>
@@ -254,7 +245,7 @@ export default function Home() {
             <h1 className="text-2xl font-bold mb-4 text-blue-900 dark:text-yellow-400">موقع المكتب على الخريطة</h1>
             <iframe
               title="موقع المكتب على الخريطة"
-              src="https://www.google.com/maps?q=31.201964,29.909026&z=17&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.763644147436!2d29.897034699999992!3d31.199566200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c39037f9a5c9%3A0x3872318c236357d3!2z2YXZg9iq2Kgg2KfZhNin2LPYqtin2LAg2YXYrdmF2K8g2KfYqNmIINiz2LHZiti5INin2YTZhdit2KfZhdmK!5e0!3m2!1sen!2seg!4v1753382157909!5m2!1sen!2seg"
               width="100%"
               height="350"
               style={{ border: 0, borderRadius: '1rem', maxWidth: '600px' }}
@@ -279,6 +270,17 @@ export default function Home() {
               <li className="flex flex-row-reverse items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 12.414a2 2 0 00-2.828 0l-4.243 4.243M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                 <span className="text-blue-700 dark:text-yellow-300">١٣ شارع الشهداء - محطة الرمل - الاسكندرية</span>
+              </li>
+              <li>
+                          {/* Social Media Icons */}
+          <div className="flex flex-row gap-4 mt-4 mr-5 z-20 self-start">
+            <a href="https://www.facebook.com/share/1B3CwMVmqo/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-blue-700 dark:text-yellow-300 hover:text-blue-900 dark:hover:text-yellow-400 text-2xl transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="28" height="28"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
+            </a>
+            <a href="https://www.instagram.com/muhammad_abusree_lawfirm?igsh=dDh3YWRrc3c1OW9p&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-pink-600 dark:text-yellow-300 hover:text-pink-800 dark:hover:text-yellow-400 text-2xl transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.497 5.782 2.225 7.148 2.163 8.414 2.105 8.794 2.163 12 2.163zm0-2.163C8.741 0 8.332.012 7.052.07 5.771.128 4.659.334 3.678 1.315c-.98.98-1.187 2.092-1.245 3.373C2.012 5.668 2 6.077 2 12c0 5.923.012 6.332.07 7.612.058 1.281.265 2.393 1.245 3.373.98.98 2.092 1.187 3.373 1.245C8.332 23.988 8.741 24 12 24s3.668-.012 4.948-.07c1.281-.058 2.393-.265 3.373-1.245.98-.98 1.187-2.092 1.245-3.373.058-1.28.07-1.689.07-7.612 0-5.923-.012-6.332-.07-7.612-.058-1.281-.265-2.393-1.245-3.373-.98-.98-2.092-1.187-3.373-1.245C15.668.012 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+          </div>
               </li>
             </ul>
           </div>
