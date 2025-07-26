@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ar">
+    <html lang="ar" className="dark">
       <head>
         {/* Other meta tags if needed */}
       </head>

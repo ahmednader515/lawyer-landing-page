@@ -13,13 +13,13 @@
 }
 
 :root {
-  --accent: #CA8F21;
-  --bg: #ffffff;
-  --text: #CA8F21;
+  --accent: #d4af37;
+  --bg: #18181b;
+  --text: #f3f4f6;
 }
 
 .hero-bg {
-  background: linear-gradient(to left, #e0e7ef 0%, #fff 100%);
+  background: linear-gradient(to left, #1f2937 0%, #111827 100%);
   position: relative;
 }
 .hero-bg::after {
@@ -38,13 +38,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent: #d4af37;
-    --bg: #18181b;
-    --text: #f3f4f6;
-  }
-}
+
 
 /* Add local font faces */
 @font-face {
